@@ -1,3 +1,34 @@
+/* .container {
+  display: flex;
+}
+
+#visual {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+[data-person-tip]:before {            
+  position : absolute;
+  content : attr(data-person-tip);
+  opacity : 1;
+  
+  transition: all 0.15s ease;
+  padding: 20px;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 2px 2px 1px silver;  
+}
+
+[data-person-tip]:hover:before {        
+  opacity : 1;
+  /* customizable
+  color: whitesmoke;
+  background: black;
+  margin-left: 50px;    
+} */
+
+ 
 .container {
   display: flex;
 }
@@ -5,12 +36,11 @@
 #visual {
   display: flex;
   flex-wrap: wrap;
-  width: 80%;
+  width: 90%;
 }
 
 /* Tooltip text */
 .tooltip {
-  visibility: hidden;
   width: 120px;
   background-color: black;
   color: #fff;
@@ -21,8 +51,6 @@
   /* Position the tooltip text */
   position: absolute;
   z-index: 1;
-  top: 15px;
-  left: 80%;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
