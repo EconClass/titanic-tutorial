@@ -19,6 +19,7 @@ const showPassengers = (data) => {
     }
     else { from = 'Southampton'; };
 
+    // Same with this block of code
     if (!age) {
       age = "Unknown";
     }
@@ -45,8 +46,6 @@ const showPassengers = (data) => {
 };
 
 const tooltip = document.querySelector('.tooltip');
-// Tooltip must be absolute position!
-tooltip.style.position = 'absolute';
 const container = document.querySelector('#visual');
 
 // Check for a mouseover on container
@@ -66,8 +65,8 @@ container.addEventListener('mouseover', (e) => {
     // If these elements had: data-name='some name' you.d see the name
     const { name, age, from } = e.target.dataset;
     tooltip.innerHTML = `
-    Name: ${name},
-    Age: ${age},
+    Name: ${name}, <br/>
+    Age: ${age}, <br/>
     Departed from: ${from}
     `;
   }
