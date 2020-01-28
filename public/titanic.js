@@ -1,6 +1,7 @@
 fetch('titanic-passengers.json')
   .then(res => res.json())
   .then(json => {
+    showPassengers(json)
     console.log(handleData(json))
   })
   .catch(err => console.log(err.message))
